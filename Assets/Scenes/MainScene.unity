@@ -1853,6 +1853,7 @@ GameObject:
   - component: {fileID: 1038755155}
   - component: {fileID: 1038755156}
   - component: {fileID: 1038755157}
+  - component: {fileID: 1038755158}
   m_Layer: 0
   m_Name: MechanicObject
   m_TagString: Untagged
@@ -1957,9 +1958,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SaveGameCash: 0
-  m_SaveValue: 10
   m_SaveBtn: {fileID: 228279482}
   m_SaveText: {fileID: 517390202}
+--- !u!114 &1038755158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1038755150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2971fca2e27cb04cbbfa5b111d47b70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SavedCookies: 0
+  m_SavedCash: 0
+  m_SavedBakers: 0
+  m_SavedShops: 0
+  m_SavedValue: 0
 --- !u!1 &1049468203
 GameObject:
   m_ObjectHideFlags: 0
