@@ -10,12 +10,14 @@ public class SellCookie : MonoBehaviour {
     public AudioSource  m_AudioCashOne;
     public AudioSource  m_AudioCashTwo;
     public int          m_generateTone;
+    public AudioSource  m_AudioNoCookie;
 
     public void OnClick()
     {
         m_generateTone = Random.Range(1, 3);
         if( GlobalCookies.s_CookieCount == 0)
         {
+            m_AudioNoCookie.Play();
             m_StatusBox.GetComponent<Text>().text = "Not enough cookies to sell.";
             m_StatusBox.GetComponent<Animation>().Play("StatusAnim");
         }
