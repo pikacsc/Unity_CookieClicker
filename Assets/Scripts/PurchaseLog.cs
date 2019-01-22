@@ -9,6 +9,14 @@ public class PurchaseLog : MonoBehaviour {
     public AudioSource playSound;
 
 
+    public void Update()
+    {
+        if (GlobalCash.s_CashCount < GlobalBaker.s_bakerValue)
+            GlobalBaker.m_turnOffButton = true;
+        if (GlobalCash.s_CashCount < GlobalShop.s_shopValue)
+            GlobalShop.m_turnOffButton = true;
+    }
+
 
     public void StartAutoCookie()
     {
