@@ -21,7 +21,6 @@ public class SaveScript : MonoBehaviour {
         else
         {
             m_SaveBtn.GetComponent<Button>().interactable = false;
-
         }
     }
 
